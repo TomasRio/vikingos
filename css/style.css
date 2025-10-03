@@ -11,18 +11,20 @@
     height: 70px;
     
 }
-header {
+ header {
 background-color: black;
-display: flex;
-justify-content: space-between;
-flex-direction: row;
-padding-right: 15px;
-position: sticky;
-top: 0;
-height: 70px;
+
 
 }
-
+.nav-link {
+    color: white;
+    font-family: "Germania One";
+    font-size: 2rem;
+}
+.navbar .navbar-nav .nav-link:hover{
+    background-color: white;
+}    
+/* 
 header ul { 
      display: flex;
      flex-direction: row;
@@ -49,7 +51,7 @@ header nav ul li a {
 header nav ul li a :visited{
     color: white;
     
-}
+}  */
 main {
     
     background-image: url(../medios/background.jpg);
