@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+/*  font-family: "Germania One", system-ui; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 300px;
+    background-color: black;
+    height: 70px;
+    
+}
+header {
+background-color: black;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+padding-right: 15px;
+position: sticky;
+top: 0;
+height: 70px;
+
+}
+
+header ul { 
+     display: flex;
+     flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+   
+}    
+ nav {
+    width: 40%;
+    
+ }    
+
+
+header nav ul li {
+    font-family:"Germania One", system-ui;
+    font-size: 2rem;
+}
+header nav ul li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+header nav ul li a :visited{
+    color: white;
+    
+}
+main {
+    
+    background-image: url(../medios/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+.vikingos {
+    height: 600px;
+    width: 800px;
+}
+main {
+    color: white;
+    text-align: center;
+    font-family: "Germania One", system-ui;
+}
+h1{
+    font-size: 8rem;
+}
+h2{
+    font-size: 4rem;
+}
+p{
+    font: 3rem;
+}
+.ragnar{
+    height: 600px;
+    width: 600px;
+}
+.lastk{
+    height: 600px;
+    width: 600px;
+}
+footer {
+    background-image: url(../medios/footer.jpg);
+    height: 160px;
+}
+.whatsapp{
+    height: 50px;
+    width: 50px;
+}
+footer a { 
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Germania One", system-ui;
+    font-size: 2rem;
+    
+
+}

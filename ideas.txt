@@ -1,0 +1,3 @@
+pagina inicial, con cantidad de peliculas , un poco de su lore y cantidad de espectadores
+pagina de peliculas, con sus peliculas y series
+pagina de juegos, con sus videojuegos
