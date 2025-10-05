@@ -1,29 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 /*  font-family: "Germania One", system-ui; */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.logo{
+
+.logo {
     height: 100%;
-  width: auto;
-  max-height: 70px; 
-    
+    width: auto;
+    max-height: 70px;
+
 }
- header {
-background-color: black;
+
+header {
+    background-color: black;
 
 
 }
+
 .nav-link {
     color: white;
     font-family: "Germania One";
     font-size: 2rem;
 }
-.navbar .navbar-nav .nav-link:hover{
+
+.navbar .navbar-nav .nav-link:hover {
     background-color: white;
-}    
+}
+
 /* 
 header ul { 
      display: flex;
@@ -53,125 +58,267 @@ header nav ul li a :visited{
     
 }  */
 main {
-    
+
     background-image: url(../medios/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 5vw;
 }
+
 .vikingos {
     max-width: 100%;
-  height: auto;
+    height: auto;
 }
+
 main {
     color: white;
     text-align: center;
     font-family: "Germania One", system-ui;
 }
-h1{
+
+h1 {
     font-size: clamp(2rem, 8vw, 8rem);
 }
-h2{
+
+h2 {
     font-size: clamp(1.5rem, 4vw, 4rem);
 }
-p{
+
+p {
     font-size: clamp(1rem, 2vw, 2rem);
 }
-.ragnar{
+
+.ragnar {
     height: 600px;
     width: 600px;
 }
-.lastk{
+
+.lastk {
     height: 600px;
     width: 600px;
 }
+
 footer {
     background-image: url(../medios/footer.jpg);
     height: 15vw;
 }
-.whatsapp{
-   height: 5vw;
-    width: 5vw;  
-   
+
+.whatsapp {
+    height: 5vw;
+    width: 5vw;
+
 }
-footer a { 
+
+footer a {
     color: white;
     list-style: none;
     text-decoration: none;
     font-family: "Germania One", system-ui;
     font-size: clamp(1rem, 2vw, 2rem);
-    
+
 
 }
 
-.dioses{
+.dioses {
     display: grid;
-    grid-template-areas: 
-    "imagendioses imagendioses"
-   "titulodioses titulodioses"
-    "odincard freyacard"
-    "thorcard lokicard";
-    grid-template-columns: 50% 50% ;
+    grid-template-areas:
+        "imagendioses imagendioses"
+        "titulodioses titulodioses"
+        "odincard freyacard"
+        "thorcard lokicard";
+    grid-template-columns: 50% 50%;
     gap: 50px;
     align-content: center;
     justify-content: center;
     text-align: center;
-    
-    
+
+
 }
-.imagendioses{
+
+.imagendioses {
     grid-area: imagendioses;
     width: 80%;
     display: block;
-    border-radius: 10px;
+    
     justify-self: center;
 }
-.titulodioses{
+
+.titulodioses {
     grid-area: titulodioses;
     text-align: center;
-    
+
 }
-.odincard{
+
+.odincard {
     grid-area: odincard;
-    
+
 }
-.freyacard{
+
+.freyacard {
     grid-area: freyacard;
-    
+
 }
-.odincard{
+
+.odincard {
     grid-area: odincard;
 }
-.lokicard{
+
+.lokicard {
     grid-area: lokicard;
 }
-.odincard, .freyacard, .thorcard, .lokicard {
-  display: flex;
-  justify-content: center;
-  grid-area: inherit;
-  margin-top: 5%;
-  
+
+.odincard,
+.freyacard,
+.thorcard,
+.lokicard {
+    display: flex;
+    justify-content: center;
+    grid-area: inherit;
+    margin-top: 5%;
+
 }
-.card-body{
+
+.card-body {
     background-color: black;
     color: white;
 }
-@media (max-width:480px){
-    .dioses{
-      
-      grid-template-areas: 
-      "titulodioses"
-      "odincard"
-      "freyacard"
-      "thorcard"
-      "lokicard";
-      grid-template-columns: 1fr;
-      gap: 50px;
 
-    }
-    .imagendioses{
-        display: none
-    }
+#carouselExampleIndicators {
+    height: 75%;
+    width: 75%;
+    display: block;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
+.mainseries {
+    display: grid;
+    grid-template-areas:
+        "tituloseries tituloseries"
+        "tituloragnar tituloragnar"
+        "textoragnar textoragnar"
+        "ragnar ragnar2"
+        "ragnar ragnar3"
+        "titulolk titulolk"
+        "textolk textolk"
+        "imagenlk videolk"
+        "imagenlk videolk2";
+    grid-template-columns: 60% 40%;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tituloseries {
+    grid-area: tituloseries;
+    padding-bottom: 20px;
+}
+
+.tituloragnar {
+    grid-area: tituloragnar;
+}
+
+.textoragnar {
+    grid-area: textoragnar;
+}
+
+.ragnar {
+    grid-area: ragnar;
+    width: 100%;
+    height: auto;
+}
+
+.ragnar2 {
+    grid-area: ragnar2;
+    align-self: center;
+}
+
+.ragnar3 {
+    grid-area: ragnar3;
+    align-self: center;
+}
+
+.titulolk {
+    grid-area: titulolk;
+}
+
+.textolk {
+    grid-area: textolk;
+}
+
+.imagenlk {
+    grid-area: imagenlk;
+    width: 100%;
+    height: auto;
+}
+
+.videolk {
+    grid-area: videolk;
+    align-self: center;
+}
+
+.videolk2 {
+    grid-area: videolk2;
+    align-self: center;
+}
+
+.videoyoutube {
+    position: relative;
+    width: 100%;
+    padding-bottom: 70%;
+
+}
+
+.videoyoutube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width:480px) {
+    .dioses {
+
+        grid-template-areas:
+            "titulodioses"
+            "odincard"
+            "freyacard"
+            "thorcard"
+            "lokicard";
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+    }
+
+    .imagendioses {
+        display: none
+    }
+
+    .mainseries {
+        grid-template-areas:
+            "tituloseries"
+            "tituloragnar"
+            "textoragnar "
+            "ragnar2"
+            "ragnar3"
+            "titulolk"
+            "textolk"
+            "videolk"
+            "videolk2";
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ragnar {
+        display: none;
+    }
+
+    .imagenlk {
+        display: none;
+    }
+}
