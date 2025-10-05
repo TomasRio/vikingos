@@ -6,9 +6,9 @@
     padding: 0;
 }
 .logo{
-    width: 300px;
-    background-color: black;
-    height: 70px;
+    height: 100%;
+  width: auto;
+  max-height: 70px; 
     
 }
  header {
@@ -58,11 +58,11 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 40px;
+    padding: 5vw;
 }
 .vikingos {
-    height: 600px;
-    width: 800px;
+    max-width: 100%;
+  height: auto;
 }
 main {
     color: white;
@@ -70,13 +70,13 @@ main {
     font-family: "Germania One", system-ui;
 }
 h1{
-    font-size: 8rem;
+    font-size: clamp(2rem, 8vw, 8rem);
 }
 h2{
-    font-size: 4rem;
+    font-size: clamp(1.5rem, 4vw, 4rem);
 }
 p{
-    font: 3rem;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 .ragnar{
     height: 600px;
@@ -88,18 +88,90 @@ p{
 }
 footer {
     background-image: url(../medios/footer.jpg);
-    height: 160px;
+    height: 15vw;
 }
 .whatsapp{
-    height: 50px;
-    width: 50px;
+   height: 5vw;
+    width: 5vw;  
+   
 }
 footer a { 
     color: white;
     list-style: none;
     text-decoration: none;
     font-family: "Germania One", system-ui;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     
 
 }
+
+.dioses{
+    display: grid;
+    grid-template-areas: 
+    "imagendioses imagendioses"
+   "titulodioses titulodioses"
+    "odincard freyacard"
+    "thorcard lokicard";
+    grid-template-columns: 50% 50% ;
+    gap: 50px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.imagendioses{
+    grid-area: imagendioses;
+    width: 80%;
+    display: block;
+    border-radius: 10px;
+    justify-self: center;
+}
+.titulodioses{
+    grid-area: titulodioses;
+    text-align: center;
+    
+}
+.odincard{
+    grid-area: odincard;
+    
+}
+.freyacard{
+    grid-area: freyacard;
+    
+}
+.odincard{
+    grid-area: odincard;
+}
+.lokicard{
+    grid-area: lokicard;
+}
+.odincard, .freyacard, .thorcard, .lokicard {
+  display: flex;
+  justify-content: center;
+  grid-area: inherit;
+  margin-top: 5%;
+  
+}
+.card-body{
+    background-color: black;
+    color: white;
+}
+@media (max-width:480px){
+    .dioses{
+      
+      grid-template-areas: 
+      "titulodioses"
+      "odincard"
+      "freyacard"
+      "thorcard"
+      "lokicard";
+      grid-template-columns: 1fr;
+      gap: 50px;
+
+    }
+    .imagendioses{
+        display: none
+    }
+}
+
