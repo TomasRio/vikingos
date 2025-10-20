@@ -1,0 +1,43 @@
+
+@media (max-width:480px) {
+    .dioses {
+
+        grid-template-areas:
+            "titulodioses"
+            "odincard"
+            "freyacard"
+            "thorcard"
+            "lokicard";
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+    }
+
+    .imagendioses {
+        display: none
+    }
+
+    .mainseries {
+        grid-template-areas:
+            "tituloseries"
+            "tituloragnar"
+            "textoragnar "
+            "ragnar2"
+            "ragnar3"
+            "titulolk"
+            "textolk"
+            "videolk"
+            "videolk2";
+        grid-template-columns: 1fr;
+        gap: 30px;
+         .ragnar {
+        display: none;
+    }
+
+    .imagenlk {
+        display: none;
+    }
+    }
+
+   
+}

@@ -1,0 +1,44 @@
+header {
+  background-color: black;
+
+  .logo {
+    height: 100%;
+    width: auto;
+    max-height: 70px;
+  }
+
+  .nav-link {
+    color: white;
+    font-family: "Germania One";
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav .nav-link:hover {
+    background-color: gray;
+  }
+}
+
+footer {
+  background-image: url(../medios/footer.jpg);
+  height: 6vw;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;
+
+  .whatsapp {
+    height: 5vw;
+    width: 5vw;
+
+  }
+
+  footer a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Germania One", system-ui;
+    font-size: clamp(1rem, 2vw, 2rem);
+
+
+  }
+
+}

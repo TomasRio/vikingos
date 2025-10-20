@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+/*  font-family: "Germania One", system-ui; */
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+
+    background-image: url(../medios/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5vw;
+    color: white;
+    text-align: center;
+    font-family: "Germania One", system-ui;
+}
+
+h1 {
+    font-size: clamp(2rem, 8vw, 8rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 4rem);
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 2rem);
+}

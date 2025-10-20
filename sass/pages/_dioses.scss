@@ -1,0 +1,63 @@
+.dioses {
+    display: grid;
+    grid-template-areas:
+        "imagendioses imagendioses"
+        "titulodioses titulodioses"
+        "odincard freyacard"
+        "thorcard lokicard";
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.imagendioses {
+    grid-area: imagendioses;
+    width: 80%;
+    display: block;
+    
+    justify-self: center;
+}
+
+.titulodioses {
+    grid-area: titulodioses;
+    text-align: center;
+
+}
+
+.odincard {
+    grid-area: odincard;
+
+}
+
+.freyacard {
+    grid-area: freyacard;
+
+}
+
+.odincard {
+    grid-area: odincard;
+}
+
+.lokicard {
+    grid-area: lokicard;
+}
+
+.odincard,
+.freyacard,
+.thorcard,
+.lokicard {
+    display: flex;
+    justify-content: center;
+    grid-area: inherit;
+    margin-top: 5%;
+
+}
+
+.card-body {
+    background-color: black;
+    color: white;
+}
