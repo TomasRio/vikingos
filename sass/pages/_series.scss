@@ -1,4 +1,3 @@
-
 .mainseries {
     display: grid;
     grid-template-areas:
@@ -15,72 +14,72 @@
     gap: 30px;
     align-content: center;
     justify-content: center;
+
     .tituloseries {
-    grid-area: tituloseries;
-    padding-bottom: 20px;
-}
+        grid-area: tituloseries;
+        padding-bottom: 20px;
+    }
 
-.tituloragnar {
-    grid-area: tituloragnar;
-}
+    .tituloragnar {
+        grid-area: tituloragnar;
+    }
 
-.textoragnar {
-    grid-area: textoragnar;
-}
+    .textoragnar {
+        grid-area: textoragnar;
+    }
 
-.ragnar {
-    grid-area: ragnar;
-    width: 100%;
-    height: auto;
-}
+    .ragnar {
+        grid-area: ragnar;
+        width: 100%;
+        height: auto;
+    }
 
-.ragnar2 {
-    grid-area: ragnar2;
-    align-self: center;
-}
+    .ragnar2 {
+        grid-area: ragnar2;
+        align-self: center;
+    }
 
-.ragnar3 {
-    grid-area: ragnar3;
-    align-self: center;
-}
+    .ragnar3 {
+        grid-area: ragnar3;
+        align-self: center;
+    }
 
-.titulolk {
-    grid-area: titulolk;
-}
+    .titulolk {
+        grid-area: titulolk;
+    }
 
-.textolk {
-    grid-area: textolk;
-}
+    .textolk {
+        grid-area: textolk;
+    }
 
-.imagenlk {
-    grid-area: imagenlk;
-    width: 100%;
-    height: auto;
-}
+    .imagenlk {
+        grid-area: imagenlk;
+        width: 100%;
+        height: auto;
+    }
 
-.videolk {
-    grid-area: videolk;
-    align-self: center;
-}
+    .videolk {
+        grid-area: videolk;
+        align-self: center;
+    }
 
-.videolk2 {
-    grid-area: videolk2;
-    align-self: center;
-}
+    .videolk2 {
+        grid-area: videolk2;
+        align-self: center;
+    }
 
-.videoyoutube {
-    position: relative;
-    width: 100%;
-    padding-bottom: 70%;
+    .videoyoutube {
+        position: relative;
+        width: 100%;
+        padding-bottom: 70%;
 
-}
+    }
 
-.videoyoutube iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    .videoyoutube iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
-}
-

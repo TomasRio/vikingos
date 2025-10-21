@@ -1,3 +1,6 @@
+@use "../generales/variables" as*;
+
+
 header {
   background-color: black;
 
@@ -8,7 +11,7 @@ header {
   }
 
   .nav-link {
-    color: white;
+    color: $blanco;
     font-family: "Germania One";
     font-size: 2rem;
   }
@@ -20,7 +23,7 @@ header {
 
 footer {
   background-image: url(../medios/footer.jpg);
-  height: 6vw;
+  height: 10vw;
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center;
@@ -32,7 +35,7 @@ footer {
   }
 
   footer a {
-    color: white;
+    color:$blanco;
     list-style: none;
     text-decoration: none;
     font-family: "Germania One", system-ui;

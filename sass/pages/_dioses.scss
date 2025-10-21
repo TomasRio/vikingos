@@ -1,3 +1,4 @@
+@use "../generales/variables" as*;
 .dioses {
     display: grid;
     grid-template-areas:
@@ -50,14 +51,14 @@
 .freyacard,
 .thorcard,
 .lokicard {
-    display: flex;
+  display: flex;
     justify-content: center;
-    grid-area: inherit;
-    margin-top: 5%;
+    align-items: stretch;
+    width: 100%;
 
 }
 
 .card-body {
     background-color: black;
-    color: white;
+    color: $blanco;
 }

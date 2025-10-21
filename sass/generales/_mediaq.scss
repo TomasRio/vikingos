@@ -1,4 +1,3 @@
-
 @media (max-width:480px) {
     .dioses {
 
@@ -17,6 +16,20 @@
         display: none
     }
 
+    #carouselExampleIndicators {
+        width: 100%;
+
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+        }
+    }
+
+    .Guerrastexto {
+        grid-template-columns: 1fr;
+    }
+
     .mainseries {
         grid-template-areas:
             "tituloseries"
@@ -30,14 +43,15 @@
             "videolk2";
         grid-template-columns: 1fr;
         gap: 30px;
-         .ragnar {
-        display: none;
+
+        .ragnar {
+            display: none;
+        }
+
+        .imagenlk {
+            display: none;
+        }
     }
 
-    .imagenlk {
-        display: none;
-    }
-    }
 
-   
 }

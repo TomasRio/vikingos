@@ -47,7 +47,7 @@ header .navbar .navbar-nav .nav-link:hover {
 
 footer {
   background-image: url(../medios/footer.jpg);
-  height: 6vw;
+  height: 10vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -113,8 +113,8 @@ footer footer a {
 .lokicard {
   display: flex;
   justify-content: center;
-  grid-area: inherit;
-  margin-top: 5%;
+  align-items: stretch;
+  width: 100%;
 }
 
 .card-body {
@@ -129,6 +129,26 @@ footer footer a {
   justify-self: center;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+#carouselExampleIndicators .carousel-item img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.Guerrastexto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+}
+.Guerrastexto .guerrastexto1,
+.Guerrastexto .guerrastexto2,
+.Guerrastexto .guerrastexto3 {
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid white;
 }
 
 .mainseries {
@@ -202,6 +222,17 @@ footer footer a {
   }
   .imagendioses {
     display: none;
+  }
+  #carouselExampleIndicators {
+    width: 100%;
+  }
+  #carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+  .Guerrastexto {
+    grid-template-columns: 1fr;
   }
   .mainseries {
     grid-template-areas: "tituloseries" "tituloragnar" "textoragnar " "ragnar2" "ragnar3" "titulolk" "textolk" "videolk" "videolk2";
