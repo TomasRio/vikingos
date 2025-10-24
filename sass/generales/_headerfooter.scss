@@ -3,6 +3,7 @@
 
 header {
   background-color: black;
+  
 
   .logo {
     height: 100%;
@@ -43,5 +44,9 @@ footer {
 
 
   }
-
+.spotify {
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+}
 }

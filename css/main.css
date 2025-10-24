@@ -6,11 +6,12 @@
 }
 
 main {
-  background-image: url(../medios/background.jpg);
+  background-image: url(../../medios/Abysm_Internal_-_Free_Wallpaper_-_Viking_Yggdrasil_Desktop.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 5vw;
+  background-attachment: fixed;
   color: white;
   text-align: center;
   font-family: "Germania One", system-ui;
@@ -62,6 +63,11 @@ footer footer a {
   text-decoration: none;
   font-family: "Germania One", system-ui;
   font-size: clamp(1rem, 2vw, 2rem);
+}
+footer .spotify {
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
 }
 
 .vikingos {
