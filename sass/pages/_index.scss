@@ -1,4 +1,36 @@
-.vikingos {
-    max-width: 100%;
-    height: auto;
+.indexmain {
+  display: grid;
+  grid-template-areas:
+    "tituloindex tituloindex tituloindex"
+    "h2index h2index h2index"
+    "parrafo1 parrafo1 imagenindex"
+    "parrafo2 parrafo2 imagenindex"
+    "parrafo3 parrafo3 imagenindex"
+    "parrafo4 parrafo4 imagenindex"
+    "parrafo5 parrafo5 imagenindex"
+    "parrafo6 parrafo6 imagenindex"
+    "parrafo7 parrafo7 imagenindex"
+    "parrafo8 parrafo8 imagenindex"
+    "parrafo9 parrafo9 parrafo9";
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+
+  .tituloindex { grid-area: tituloindex; }
+  .h2index { grid-area: h2index; }
+  .parrafo1 { grid-area: parrafo1; }
+  .parrafo2 { grid-area: parrafo2; }
+  .parrafo3 { grid-area: parrafo3; }
+  .parrafo4 { grid-area: parrafo4; }
+  .parrafo5 { grid-area: parrafo5; }
+  .parrafo6 { grid-area: parrafo6; }
+  .parrafo7 { grid-area: parrafo7; }
+  .parrafo8 { grid-area: parrafo8; }
+  .parrafo9 { grid-area: parrafo9; }
+  .imagenindex { grid-area: imagenindex; height: 100%;
+  width: 100%;
+  object-fit: cover}
 }
+.vikingos { max-width: 100%; height: auto; }

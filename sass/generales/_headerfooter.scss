@@ -2,7 +2,8 @@
 
 
 header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(2px); 
   
 
   .logo {
@@ -32,6 +33,7 @@ footer {
   .whatsapp {
     height: 5vw;
     width: 5vw;
+    
 
   }
 

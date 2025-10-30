@@ -1,4 +1,24 @@
 @media (max-width:480px) {
+    .indexmain{
+        grid-template-areas: 
+        "tituloindex"
+        "h2index"
+        "parrafo1"
+        "parrafo2"
+        "parrafo3"
+        "parrafo4"
+        "parrafo5"
+        "parrafo6"
+        "parrafo7"
+        "parrafo8"
+        "parrafo9";
+        grid-template-columns: 1fr;
+        padding: 5%;
+
+    }
+    .imagenindex {
+        display: none;
+    }
     .dioses {
 
         grid-template-areas:

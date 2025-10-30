@@ -5,12 +5,11 @@
   padding: 0;
 }
 
-main {
+body {
   background-image: url(../../medios/Abysm_Internal_-_Free_Wallpaper_-_Viking_Yggdrasil_Desktop.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 5vw;
   background-attachment: fixed;
   color: white;
   text-align: center;
@@ -30,7 +29,8 @@ p {
 }
 
 header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
 }
 header .logo {
   height: 100%;
@@ -68,6 +68,55 @@ footer .spotify {
   position: fixed;
   right: 1px;
   bottom: 1px;
+}
+
+.indexmain {
+  display: grid;
+  grid-template-areas: "tituloindex tituloindex tituloindex" "h2index h2index h2index" "parrafo1 parrafo1 imagenindex" "parrafo2 parrafo2 imagenindex" "parrafo3 parrafo3 imagenindex" "parrafo4 parrafo4 imagenindex" "parrafo5 parrafo5 imagenindex" "parrafo6 parrafo6 imagenindex" "parrafo7 parrafo7 imagenindex" "parrafo8 parrafo8 imagenindex" "parrafo9 parrafo9 parrafo9";
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+}
+.indexmain .tituloindex {
+  grid-area: tituloindex;
+}
+.indexmain .h2index {
+  grid-area: h2index;
+}
+.indexmain .parrafo1 {
+  grid-area: parrafo1;
+}
+.indexmain .parrafo2 {
+  grid-area: parrafo2;
+}
+.indexmain .parrafo3 {
+  grid-area: parrafo3;
+}
+.indexmain .parrafo4 {
+  grid-area: parrafo4;
+}
+.indexmain .parrafo5 {
+  grid-area: parrafo5;
+}
+.indexmain .parrafo6 {
+  grid-area: parrafo6;
+}
+.indexmain .parrafo7 {
+  grid-area: parrafo7;
+}
+.indexmain .parrafo8 {
+  grid-area: parrafo8;
+}
+.indexmain .parrafo9 {
+  grid-area: parrafo9;
+}
+.indexmain .imagenindex {
+  grid-area: imagenindex;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .vikingos {
@@ -221,6 +270,14 @@ footer .spotify {
 }
 
 @media (max-width: 480px) {
+  .indexmain {
+    grid-template-areas: "tituloindex" "h2index" "parrafo1" "parrafo2" "parrafo3" "parrafo4" "parrafo5" "parrafo6" "parrafo7" "parrafo8" "parrafo9";
+    grid-template-columns: 1fr;
+    padding: 5%;
+  }
+  .imagenindex {
+    display: none;
+  }
   .dioses {
     grid-template-areas: "titulodioses" "odincard" "freyacard" "thorcard" "lokicard";
     grid-template-columns: 1fr;
