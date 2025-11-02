@@ -16,7 +16,7 @@
   gap: 20px;
   justify-content: center;
   align-items: start;
-  padding: 10px;
+  padding: 20px;
 
   .tituloindex { grid-area: tituloindex; }
   .h2index { grid-area: h2index; }
@@ -30,7 +30,9 @@
   .parrafo8 { grid-area: parrafo8; }
   .parrafo9 { grid-area: parrafo9; }
   .imagenindex { grid-area: imagenindex; height: 100%;
-  width: 100%;
-  object-fit: cover}
+  width: 80%;
+  object-fit: cover;
+  }
+  
 }
 .vikingos { max-width: 100%; height: auto; }

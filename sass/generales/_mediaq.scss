@@ -1,24 +1,26 @@
 @media (max-width:480px) {
-    .indexmain{
-        grid-template-areas: 
-        "tituloindex"
-        "h2index"
-        "parrafo1"
-        "parrafo2"
-        "parrafo3"
-        "parrafo4"
-        "parrafo5"
-        "parrafo6"
-        "parrafo7"
-        "parrafo8"
-        "parrafo9";
+    .indexmain {
+        grid-template-areas:
+            "tituloindex"
+            "h2index"
+            "parrafo1"
+            "parrafo2"
+            "parrafo3"
+            "parrafo4"
+            "parrafo5"
+            "parrafo6"
+            "parrafo7"
+            "parrafo8"
+            "parrafo9";
         grid-template-columns: 1fr;
         padding: 5%;
 
     }
+
     .imagenindex {
         display: none;
     }
+
     .dioses {
 
         grid-template-areas:
@@ -72,6 +74,60 @@
             display: none;
         }
     }
+    .textowh {
+        display: none;
+    }
 
 
+}
+
+@media only screen and (min-width:481px) and (max-width: 978px) {
+   .indexmain {
+        grid-template-areas:
+            "tituloindex tituloindex"
+            "h2index h2index"
+            "parrafo1 parrafo2"
+            "parrafo3 parrafo4"
+            "parrafo5 parrafo6"
+            "parrafo7 parrafo8"
+            "parrafo9 parrafo9"
+            ;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5%;
+
+    }
+
+    .imagenindex {
+        display: none;
+    }
+       #carouselExampleIndicators {
+        width: 100%;
+
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: contain;
+        }
+    }
+     .mainseries {
+        grid-template-areas:
+            "tituloseries tituloseries"
+            "tituloragnar tituloragnar"
+            "textoragnar textoragnar"
+            "ragnar ragnar"
+            "ragnar ragnar"
+            "ragnar2 ragnar3"
+            "titulolk titulolk"
+            "textolk textolk"
+            "imagenlk imagenlk"
+            "imagenlk imagenlk"
+            "videolk videolk2"
+            ;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+     }
+    .textowh {
+        display: none;
+    }
 }
